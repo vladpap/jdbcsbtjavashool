@@ -20,7 +20,8 @@ public class StudentVisitJavaSbt implements StudentVisitDao {
             return listIntegers(statement.executeQuery("SELECT DISTINCT LESSON_ID FROM STUDENT_VISITS"));
         } catch (SQLException e) {
             throw new RuntimeException("Error read table Student_visits", e);
-        }    }
+        }
+    }
 
     @Override
     public List<Integer> showStudentByLessonId(int idLesson) {

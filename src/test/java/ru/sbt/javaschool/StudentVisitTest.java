@@ -40,7 +40,7 @@ public class StudentVisitTest {
     }
 
     @Test
-    public void testShowLessonThatVisitStudent(){
+    public void testShowLessonThatVisitStudent() {
         StudentVisitDao studentVisitJavaSbt = new StudentVisitJavaSbt(connection);
         List<Integer> list = studentVisitJavaSbt.showLessonsAttendanceByStudentId(1);
         assertEquals(7, list.size());

@@ -67,6 +67,7 @@ public class StudentTest {
         assertEquals("Petr Orlov", students.get(1).toString());
         assertEquals("Sveta Romanova", students.get(2).toString());
     }
+
     @Test
     public void testUpdateStudent() {
         StudentDao studentJavaSbt = new StudentJavaSbt(connection);
